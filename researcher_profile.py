@@ -15,7 +15,7 @@ st.set_page_config(page_title="Researcher Profile", layout="wide")
 
 name = "Mr. Kizonde Bihindi Kelly"
 cellphone = "0810770400"
-designation = "Lab assistant, Electronic engineering"
+designation = "Lab assistant, Electrical engineering"
 email = "kellykizonde78@gmail.com"
 
 
@@ -66,5 +66,6 @@ for pub in publications:
 st.markdown("---")
 
 st.write("© 2026 Researcher Profile App")
+
 
 
