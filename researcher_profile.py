@@ -14,6 +14,7 @@ st.set_page_config(page_title="Researcher Profile", layout="wide")
 
 
 name = "Mr. Kizonde Bihindi Kelly"
+cellphone = "0812777402"
 designation = "Lab assistant, Electronic engineering"
 email = "kellykizonde78@gmail.com"
 
@@ -21,9 +22,14 @@ email = "kellykizonde78@gmail.com"
 st.title(name)
 st.subheader(designation)
 
+st.header("📫 Contact Information")
+st.markdown(f"""
+- **Number:** {cellphone}  
+- **Email:** [{email}](mailto:{email})  
+""")
 
 
-st.header("Research Interests")
+st.header("🔬 Research Interests")
 st.markdown("""
 - Electrical and Electronic  
 - Iot 
@@ -33,7 +39,7 @@ st.markdown("""
 """)
 
 
-st.header("Biography")
+st.header("📖 Biography")
 st.write(
     "I am a Laboratory Assistant and Master of Engineering candidate in the "
     "Department of Electrical Engineering at Vaal University of Technology. "
@@ -46,7 +52,7 @@ st.write(
 
 
 
-st.header("Publications")
+st.header("📄Publications")
 publications = [
     "-  B.K. Kizonde, TND Mathaba and HM Langa (2024),’ A Non-Intrusive Load Monitoring Technique For Real-Time Energy Management’ in proceedings of the 9th smart city applications, Tangier, Morocco, 02-04 Oct. 2024.",
     "-	B. K. Kizonde, T. N. D. Mathaba and H. M. Langa,' Design of an IoT-Based Energy Monitoring Node,' 2023 International Conference on Electrical, Computer and Energy Technologies (ICECET), Cape Town, South Africa, 2023, pp. 1-6."
@@ -57,12 +63,9 @@ for pub in publications:
     
     
     
-st.header("📫 Contact Information")
-st.markdown(f"""
-- **Name:** {name}  
-- **Email:** [{email}](mailto:{email})  
-""")
+
 
 
 st.markdown("---")
+
 st.write("© 2026 Researcher Profile App")
